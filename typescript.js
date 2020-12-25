@@ -27,11 +27,19 @@ module.exports = {
       "error",
       {
         groups: ["builtin", "external", "internal", ["parent", "sibling"]],
-        "newlines-between": "always",
+        pathGroups: [
+          {
+            pattern: "react",
+            group: "external",
+            position: "before",
+          },
+        ],
+        pathGroupsExcludedImportTypes: ["react"],
         alphabetize: {
           order: "asc",
           caseInsensitive: true,
         },
+        "newlines-between": "always",
       },
     ],
   },

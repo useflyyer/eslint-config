@@ -1,3 +1,5 @@
+const typescript = require("./typescript");
+
 module.exports = {
   extends: ["plugin:react/recommended", "plugin:react-hooks/recommended", "prettier/react"],
   parserOptions: {
@@ -7,13 +9,14 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ["react", "react-hooks"],
+  plugins: ["react", "react-hooks", "import"],
   settings: {
     react: {
       version: "detect", // Tells eslint-plugin-react to automatically detect the version of React to use
     },
   },
   rules: {
+    "import/order": typescript.rules["import/order"],
     // // Checks rules of Hooks
     // "react-hooks/rules-of-hooks": "warn",
     // // Checks effect dependencies
