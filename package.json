@@ -1,0 +1,57 @@
+{
+  "name": "@flayyer/eslint-config",
+  "version": "0.0.0",
+  "private": false,
+  "description": "ESLint rules for our projects.",
+  "scripts": {
+    "lint": "eslint --config=index.js --ext .js --ext .ts --ext .tsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "prettier.js",
+    "react.js",
+    "typescript.js",
+    "jest.js"
+  ],
+  "repository": "https://github.com/flayyer/eslint-config.git",
+  "author": {
+    "email": "patricio@flayyer.com",
+    "name": "Patricio López Juri",
+    "url": "https://flayyer.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "*",
+    "prettier": "*"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  }
+}
