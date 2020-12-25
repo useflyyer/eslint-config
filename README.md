@@ -34,6 +34,21 @@ In the `package.json` file add the following in the `"scripts"` section:
  }
 ```
 
+### Configure for Javascript
+
+Create a `.eslintrc.js` file in the root of your project and add the following:
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: [
+    "@flayyer/eslint-config",
+    "@flayyer/eslint-config/jest",
+    "@flayyer/eslint-config/prettier",
+  ],
+};
+```
+
 ### Configure for Typescript
 
 Create a `.eslintrc.js` file in the root of your project and add the following:
@@ -102,6 +117,13 @@ Add the following:
 
 ## Publishing
 
+To make changes to this package run:
+
+```sh
+yarn link
+yarn link '@flayyer/eslint-config'
+```
+
 To publish and update of this package run:
 
 ```sh
@@ -110,4 +132,11 @@ To publish and update of this package run:
 
 git push --follow-tags
 yarn publish --access=public
+```
+
+Unlink this package:
+
+```sh
+yarn unlink '@flayyer/eslint-config'
+yarn unlink
 ```

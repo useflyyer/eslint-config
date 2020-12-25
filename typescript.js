@@ -1,4 +1,4 @@
-var base = require('./index');
+const base = require("./index");
 
 module.exports = {
   extends: [

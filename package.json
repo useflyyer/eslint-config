@@ -4,7 +4,7 @@
   "private": false,
   "description": "ESLint rules for our projects.",
   "scripts": {
-    "lint": "eslint --config=index.js --ext .js --ext .ts --ext .tsx"
+    "lint": "eslint --config=.eslintrc.js --ext .js --ext .ts --ext .tsx"
   },
   "husky": {
     "hooks": {
