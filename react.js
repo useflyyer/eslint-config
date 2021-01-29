@@ -17,6 +17,7 @@ module.exports = {
   },
   rules: {
     "import/order": typescript.rules["import/order"],
+    "react/display-name": "warn",
     // // Checks rules of Hooks
     // "react-hooks/rules-of-hooks": "warn",
     // // Checks effect dependencies

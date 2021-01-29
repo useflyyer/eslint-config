@@ -12,6 +12,7 @@ module.exports = {
     "no-console": "warn",
     "no-empty": "warn",
     "no-ex-assign": "warn",
+    "no-useless-escape": "warn",
     "no-constant-condition": "warn",
     "no-shadow": [
       "error",
@@ -39,6 +40,8 @@ module.exports = {
           "Image",
           "length",
           "name",
+          "title",
+          "external",
           "Notification",
           "parent",
           "print",

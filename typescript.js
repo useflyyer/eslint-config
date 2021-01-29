@@ -16,14 +16,16 @@ module.exports = {
   rules: {
     // Fix rules conflicts
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
     "no-shadow": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/no-shadow": base.rules["no-shadow"],
     // Continue
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/ban-types": "warn",
     "import/order": [
       "error",
       {
