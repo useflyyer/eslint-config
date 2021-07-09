@@ -25,11 +25,11 @@
     "typescript.js",
     "jest.js"
   ],
-  "repository": "https://github.com/flyyer/eslint-config.git",
+  "repository": "https://github.com/useflyyer/eslint-config.git",
   "author": {
     "email": "patricio@flyyer.com",
     "name": "Patricio López Juri",
-    "url": "https://flyyer.com"
+    "url": "https://flyyer.io"
   },
   "license": "MIT",
   "dependencies": {
