@@ -1,4 +1,4 @@
-# @flayyer/eslint-config
+# @flyyer/eslint-config
 
 Please use this configuration to maintain a common and homogeneous code base.
 
@@ -7,7 +7,7 @@ Please use this configuration to maintain a common and homogeneous code base.
 Install this package as any other package with:
 
 ```sh
-yarn add --dev @flayyer/eslint-config eslint prettier
+yarn add --dev @flyyer/eslint-config eslint prettier
 ```
 
 Create a `.eslintignore` and add any files that are bundled, builded and/or _transpiled_:
@@ -42,9 +42,9 @@ Create a `.eslintrc.js` file in the root of your project and add the following:
 // .eslintrc.js
 module.exports = {
   extends: [
-    "@flayyer/eslint-config",
-    "@flayyer/eslint-config/jest",
-    "@flayyer/eslint-config/prettier",
+    "@flyyer/eslint-config",
+    "@flyyer/eslint-config/jest",
+    "@flyyer/eslint-config/prettier",
   ],
 };
 ```
@@ -57,10 +57,10 @@ Create a `.eslintrc.js` file in the root of your project and add the following:
 // .eslintrc.js
 module.exports = {
   extends: [
-    "@flayyer/eslint-config",
-    "@flayyer/eslint-config/typescript",
-    "@flayyer/eslint-config/jest",
-    "@flayyer/eslint-config/prettier",
+    "@flyyer/eslint-config",
+    "@flyyer/eslint-config/typescript",
+    "@flyyer/eslint-config/jest",
+    "@flyyer/eslint-config/prettier",
   ],
 };
 ```
@@ -73,11 +73,11 @@ Create a `.eslintrc.js` file in the root of your project and add the following:
 // .eslintrc.js
 module.exports = {
   extends: [
-    "@flayyer/eslint-config",
-    "@flayyer/eslint-config/typescript",
-    "@flayyer/eslint-config/react",
-    "@flayyer/eslint-config/jest",
-    "@flayyer/eslint-config/prettier",
+    "@flyyer/eslint-config",
+    "@flyyer/eslint-config/typescript",
+    "@flyyer/eslint-config/react",
+    "@flyyer/eslint-config/jest",
+    "@flyyer/eslint-config/prettier",
   ],
 };
 ```
@@ -121,7 +121,7 @@ To make changes to this package run:
 
 ```sh
 yarn link
-yarn link '@flayyer/eslint-config'
+yarn link '@flyyer/eslint-config'
 ```
 
 To publish and update of this package run:
@@ -137,6 +137,6 @@ yarn publish --access=public
 Unlink this package:
 
 ```sh
-yarn unlink '@flayyer/eslint-config'
+yarn unlink '@flyyer/eslint-config'
 yarn unlink
 ```

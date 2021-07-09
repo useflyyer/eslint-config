@@ -1,5 +1,5 @@
 // yarn link
-// yarn link '@flayyer/eslint-config'
+// yarn link '@flyyer/eslint-config'
 module.exports = {
-  extends: ["@flayyer/eslint-config", "@flayyer/eslint-config/prettier"],
+  extends: ["@flyyer/eslint-config", "@flyyer/eslint-config/prettier"],
 };
