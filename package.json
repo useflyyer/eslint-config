@@ -33,28 +33,28 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/eslint-parser": "^7.14.4",
-    "@typescript-eslint/eslint-plugin": "^4.25.0",
-    "@typescript-eslint/parser": "^4.25.0",
+    "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.4",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jest": "^24.3.6",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-vue": "^7.10.0",
-    "vue-eslint-parser": "^7.6.0"
+    "eslint-plugin-vue": "^7.17.0",
+    "vue-eslint-parser": "^7.11.0"
   },
   "peerDependencies": {
     "eslint": "*",
     "prettier": "*"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
+    "eslint": "^7.32.0",
     "husky": "^4.3.7",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.0",
-    "typescript": "^4.3.2"
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.0",
+    "typescript": "^4.4.3"
   }
 }
