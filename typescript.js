@@ -1,5 +1,3 @@
-const base = require("./index");
-
 module.exports = {
   extends: [
     // Typescript + ESLint + Prettier: https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
@@ -15,9 +13,8 @@ module.exports = {
   rules: {
     // Fix rules conflicts
     "no-unused-vars": "off",
-    "no-shadow": "off",
     "@typescript-eslint/no-unused-vars": "warn",
-    "@typescript-eslint/no-shadow": base.rules["no-shadow"],
+    // "@typescript-eslint/no-shadow": "warn", // TODO: Looks like it was removed?
     // Continue
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",

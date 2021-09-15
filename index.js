@@ -15,7 +15,7 @@ module.exports = {
     "no-useless-escape": "warn",
     "no-constant-condition": "warn",
     "no-shadow": [
-      "error",
+      "warn",
       {
         builtinGlobals: true,
         hoist: "all",
