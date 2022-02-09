@@ -14,6 +14,7 @@ module.exports = {
     "no-ex-assign": "warn",
     "no-useless-escape": "warn",
     "no-constant-condition": "warn",
+    "no-unused-vars": ["warn", { args: "after-used", argsIgnorePattern: "^_" }],
     "no-shadow": [
       "warn",
       {

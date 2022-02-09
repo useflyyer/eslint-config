@@ -15,7 +15,7 @@ module.exports = {
   rules: {
     // Fix rules conflicts
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": index["rules"]["no-unused-vars"],
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": index["rules"]["no-shadow"],
     // Continue
