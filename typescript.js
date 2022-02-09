@@ -1,3 +1,5 @@
+const index = require("./index");
+
 module.exports = {
   extends: [
     // Typescript + ESLint + Prettier: https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
@@ -14,13 +16,14 @@ module.exports = {
     // Fix rules conflicts
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "warn",
-    // "@typescript-eslint/no-shadow": "warn", // TODO: Looks like it was removed?
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": index["rules"]["no-shadow"],
     // Continue
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-ts-comment": "warn",
     "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/ban-ts-comment": ["warn", { "ts-expect-error": "allow-with-description" }],
     "@typescript-eslint/ban-types": "warn",
     "import/order": [
       "error",
