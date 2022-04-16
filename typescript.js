@@ -17,7 +17,7 @@ module.exports = {
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": index["rules"]["no-unused-vars"],
     "no-shadow": "off",
-    // "@typescript-eslint/no-shadow": index["rules"]["no-shadow"],
+    "@typescript-eslint/no-shadow": index["rules"]["no-shadow"],
     // Continue
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
